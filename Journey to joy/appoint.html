@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase - Your Mental Health Companion</title>
+    <style>
+        /* Form styling */
+        body{
+            align-items: center;
+            text-align: center;
+        }
+appointment{
+    align-items: center;
+}
+form {
+    text-align: center;
+    margin-left: 380px;
+
+    align-items: center;
+    flex: 1;
+    max-width: 45%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00b7ff;
+    text-align: center;
+}
+
+form .box {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+}
+
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4953e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+form .btn:hover {
+    background-color: #767eef;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .image-container, form {
+        max-width: 100%;
+    }
+}
+    </style>
+   
+</head>
+<body>
+    <link rel="stylesheet" href="service.css">
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="mental.jpg" alt="mental Logo">
+            
+            <span class="main-title">Journey to Joy</span>
+            <span class="sub-title"> The only journey is journey wiithin </span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="journeytojoy.html">HOME</a></li>
+            <br>
+            <li><a href="giving.html"> GIVING SUPPORT </a></li>
+            <br>
+            <li><a href="service.html"> SERVICE </a></li>
+            <br>
+            <li><a href="contact.html"> CONTACT US </a></li>
+          
+        </ul>
+    </nav>
+    <br>
+        <link rel="stylesheet" href="service.css">
+
+
+    <section class="appointment" id="appointment">
+        <h1 class="heading"><span>Appointment</span> Now</h1>
+        <div class="row">
+            <div class="image-container">
+                <img src="appointment.jpg" alt="Appointment Image">
+            </div>
+
+            <form action="https://api.web3forms.com/submit"
+      method="POST"
+      >
+        <input type="hidden"
+        name="access_key"
+        value="c69e3a13-70ab-485e-a04b-26e59dee0ec3
+"
+        />
+                
+                <h3>Make an Appointment</h3>
+                <input type="text" name="name" placeholder="Your Name" class="box" required>
+                <input type="number" name="number" placeholder="Your Number" class="box" required>
+                <input type="email" name="email" placeholder="Your Email" class="box" required>
+                <input type="date" name="date" class="box" required>
+                <input type="submit" name="submit" value="Make Appointment" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <br><div class="footer">
+        <div>
+            <h4>Find and access support</h4>
+            <li><a href="#">Call 1660 010 2005</a></li>
+            <li><a href="#">1 on 1 Therapy</a></li>
+            <li><a href="#">Group Therapy</a></li>
+        </div>
+        <div>
+            <h4>Tools</h4>
+            
+            <h4>Further information</h4>
+            <p><a href="journeytojoy.html">HOME</a></p>
+         
+            <p><a href="giving.html"> GIVING SUPPORT </a></p>
+       
+            <p><a href="service.html"> SERVICE </a></p>
+         
+            <p><a href="contact.html"> CONTACT US </a></p>
+          
+        </div>
+        <div>
+            
+            <p>&copy; 2024 Journey To Joy. All rights reserved. <br> Disclaimer: Content Provided by Journey to Joy serves as information purpose only and cannot be directed as a substitute for any type of professional medical advice.</p>
+        </div>
+    </div>
+    </body>
+    
+    </html>

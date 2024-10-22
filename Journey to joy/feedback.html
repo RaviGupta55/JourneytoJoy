@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .survey-container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .form-section {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .option {
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            display: block;
+            margin-top: 10px;
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #6f3682;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a2e6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-container">
+        <h2>You are invited to take part in a short survey about your experience.</h2>
+        <p>There are about 10 questions in the survey and your answers are anonymous.</p>
+        
+        <div class="form-section">
+            <p>First, some general questions about you…</p>
+            
+            <div class="question">
+                <p class="error-message">Please answer this question.</p>
+                <label for="why-use">Why are you using this website today? (select one)</label>
+                
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b9e4ca84-ef54-468e-a9f4-257f8b4196a1" />
+                    
+                    <div class="option">
+                        <input type="radio" id="myself" name="usage" value="myself" required>
+                        <label for="myself">To find information or support for myself</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="someone-else" name="usage" value="someone-else">
+                        <label for="someone-else">To find information or support for someone else</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="health-professional" name="usage" value="health-professional">
+                        <label for="health-professional">To find information or services relevant to my role as a Health Professional</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="service-provider" name="usage" value="service-provider">
+                        <label for="service-provider">To find information or services relevant to my role as a Service Provider</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="other" name="usage" value="other">
+                        <label for="other">Another reason. The text field is optional.</label>
+                        <input type="text" id="other-reason" name="other-reason" placeholder="Please specify">
+                    </div>
+                    
+                    <div class="button-container">
+                        <button type="submit">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
